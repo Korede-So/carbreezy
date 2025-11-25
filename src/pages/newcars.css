@@ -1,0 +1,229 @@
+/* section  */
+.newcars-section {
+  background: #000;
+  padding: 60px 30px;
+  color: #fff;
+}
+
+.newcars-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #e3262f;
+  text-shadow: 0 0 10px #ff4a00;
+}
+
+/* GRID LAYOUT */
+.newcars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/*card*/
+.newcars-card {
+  background: #0d0d0d;
+  border: 2px solid #26e0d9;
+  border-radius: 12px;
+  padding: 15px;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(38, 224, 217, 0.3);
+}
+
+.newcars-card:hover {
+  transform: translateY(-6px);
+  border-color: #e3262f;
+  box-shadow: 0 0 25px rgba(227, 38, 47, 0.5);
+}
+
+/* Image Box */
+.newcars-img-box {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.newcars-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.newcars-card:hover .newcars-img-box img {
+  transform: scale(1.06);
+}
+
+/*text info*/
+.newcars-info {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.newcars-info h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #26e0d9;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e3262f;
+}
+
+/* ========================
+   BADGES
+======================== */
+.brand-badge,
+.type-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  margin: 2px;
+}
+
+.brand-badge {
+  background: #e3262f;
+  color: white;
+  text-shadow: 0 0 5px #ff4a00;
+  box-shadow: 0 0 12px rgba(227, 38, 47, 0.4);
+}
+
+.type-badge {
+  background: #26e0d9;
+  color: #000;
+  box-shadow: 0 0 12px rgba(38, 224, 217, 0.4);
+}
+
+/* ========================
+   SPECS LIST
+======================== */
+.specs {
+  margin-top: 12px;
+  list-style: none;
+  padding: 0;
+  color: #cfcfcf;
+  font-size: 14px;
+}
+
+.specs li {
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Divider */
+.card-divider {
+  margin: 15px 0;
+  height: 1px;
+  background: linear-gradient(to right, #e3262f, #26e0d9);
+  opacity: 0.4;
+}
+
+/* ========================
+   BUTTON
+======================== */
+.details-btn {
+  width: 100%;
+  background: #e3262f;
+  color: #fff;
+  border: none;
+  padding: 12px 15px;
+  margin-top: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.details-btn:hover {
+  background: #26e0d9;
+  color: #000;
+  box-shadow: 0 0 15px #26e0d9;
+}
+
+/* MEDIA USABILITY*/
+
+/* Tablets — medium screens */
+@media (max-width: 992px) {
+  .newcars-title {
+    font-size: 34px;
+  }
+
+  .newcars-img-box {
+    height: 165px;
+  }
+}
+
+/* Large Phones */
+@media (max-width: 768px) {
+  .newcars-title {
+    font-size: 30px;
+  }
+
+  .newcars-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+  }
+
+  .newcars-card {
+    padding: 12px;
+  }
+
+  .newcars-img-box {
+    height: 150px;
+  }
+
+  .details-btn {
+    padding: 10px 14px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .newcars-section {
+    padding: 40px 15px;
+  }
+
+  .newcars-title {
+    font-size: 26px;
+  }
+
+  .newcars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newcars-img-box {
+    height: 140px;
+  }
+
+  .specs li {
+    font-size: 13px;
+  }
+
+  .details-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Ultra-small devices */
+@media (max-width: 360px) {
+  .newcars-info h3 {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+
+  .details-btn {
+    font-size: 13px;
+  }
+}

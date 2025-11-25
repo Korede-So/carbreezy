@@ -1,0 +1,90 @@
+.carbreezy-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background-color: #000;
+  min-height: 300px;
+  min-width: 100px;
+}
+
+.carbreezy-card {
+  background-color: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carbreezy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 191, 174, 0.7);
+}
+
+.carbreezy-card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.carbreezy-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  color: #fff;
+}
+
+.carbreezy-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.carbreezy-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e3262f;
+  margin-bottom: 6px;
+}
+
+.carbreezy-sub {
+  font-size: 14px;
+  color: #fff;
+}
+
+.carbreezy-condition {
+  color: #00bfae;
+  font-weight: 600;
+}
+
+.carbreezy-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carbreezy-price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #00bfae;
+}
+
+.carbreezy-status {
+  font-size: 14px;
+  color: #fff;
+}
+
+.carbreezy-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 100;
+  padding: 20px;
+  border-radius: 12px;
+}

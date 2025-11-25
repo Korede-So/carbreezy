@@ -1,0 +1,34 @@
+[
+  {
+    "firstName": "Daniel",
+    "lastName": "David",
+    "email": "danieldavidviper001@gmail.com",
+    "budgetRange": "500000",
+    "vehicleType": "benz",
+    "message": "ehjhjjd"
+  },
+  {
+    "firstName": "sofolahan",
+    "lastName": "korede",
+    "email": "sofolahankorede@gmail.com",
+    "budgetRange": "rffjhfjhf",
+    "vehicleType": "tretydfj",
+    "message": "tydytdyutduyfutdytdtyd"
+  },
+  {
+    "firstName": "sofolahan",
+    "lastName": "korede",
+    "email": "sofolahankorede@gmail.com",
+    "budgetRange": "5000",
+    "vehicleType": "toyota",
+    "message": "It should be an suv"
+  },
+  {
+    "firstName": "sofolahan",
+    "lastName": "korede",
+    "email": "sofolahankorede@gmail.com",
+    "budgetRange": "5000",
+    "vehicleType": "toyota",
+    "message": "It should be an SUV"
+  }
+]
