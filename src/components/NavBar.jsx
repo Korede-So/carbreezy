@@ -38,19 +38,10 @@ export default function NavBar() {
       {/* ICONS */}
       <div className="navbar-icons">
         <a href="#filter" className="icon-1">🔍</a>   {/* Scroll to filter/search */}
-        <button className="icon-2" onClick={() => setShowProfile(true)}>👤</button>
+        
       </div>
 
-       {/* PROFILE POPUP */}
-      {showProfile && (
-        <div className="profile-popup">
-          <div className="popup-content">
-            <h2>User Profile</h2>
-            <p>Login, settings, or user info goes here.</p>
-            <button onClick={() => setShowProfile(false)}>Close</button>
-          </div>
-        </div>
-      )}
+       
 
     </nav>
   );
